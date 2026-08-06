@@ -60,12 +60,22 @@ nav a {
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
+  padding: 0.5rem 1rem;
 }
 
 nav a:hover {
   color: #f1c40f;             
   text-decoration: underline;
 }
+
+@media (min-width: 700px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 
 /* headings */
 
@@ -164,8 +174,9 @@ section {
 /* Interests section */
 .interest-grid {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .interest-item {
@@ -175,6 +186,17 @@ section {
   background-color: #f0f0f0;
   border-radius: 8px;
 }
+
+@media (min-width: 700px) {
+  .interest-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .interest-item {
+    flex: 1 1 250px;
+  }
+}
+
 
 /* Footer */
 footer {
