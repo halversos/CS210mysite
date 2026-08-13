@@ -1,56 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Introduction - CS 210</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Final project update: redesigned the site with a responsive layout,
+         fluid typography, improved navigation, and an interests card section. -->
+
+    <title>My Introduction - CS 210</title>
     <link rel="stylesheet" href="css/style.css">
-  </head>
+</head>
 
 <body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="site-title">My CS 210 Site</a>
 
-
-
-  <h1>Welcome to My CS 210 Introduction</h1>
-
-  <nav>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="hobbies/hobbies.html">My Hobbies</a></li>
-      <li><a href="goals/goals.html">My Goals</a></li>
-  </nav>
-
-  <img src="img/sandra.png" alt="image of a woman's headshot." class="center">
-  <main>
-
-    <section class="interests">
-      <h2>My Interests</h2>
-
-      <div class="interest-grid">
-
-        <div class="interest-item">
-          <h3>Photography</h3>
-          <p>I love capturing moments...</p>
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="hobbies/hobbies.html">My Hobbies</a></li>
+                    <li><a href="goals/goals.html">My Goals</a></li>
+                    <li><a href="fishing/fishing.html">Fishing</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <div class="interest-item">
-          <h3>Hiking</h3>
-          <p>Exploring nature trails...</p>
+    <main>
+        <section class="hero container">
+            <div class="hero-text">
+                <p class="eyebrow">WELCOME TO MY WEBSITE</p>
+                <h1>Welcome to My CS 210 Introduction</h1>
+
+                <p class="intro">
+                    This website is a little introduction to who I am,
+                    the things I enjoy, and some of my goals.
+                </p>
+
+                <a class="button" href="hobbies/hobbies.html">Explore My Hobbies</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="img/sandra.png"
+                     alt="A headshot of me">
+            </div>
+        </section>
+
+        <section class="interests container">
+            <div class="section-heading">
+                <p class="eyebrow">A LITTLE ABOUT ME</p>
+                <h2>My Interests</h2>
+                <p>
+                    Here are a few things that I enjoy and that are important
+                    to me.
+                </p>
+            </div>
+
+            <div class="interest-grid">
+                <article class="interest-card">
+                    <span class="card-number">01</span>
+                    <h3>Photography</h3>
+                    <p>
+                        I love capturing moments and creating photographs
+                        that preserve memories and experiences.
+                    </p>
+                </article>
+
+                <article class="interest-card">
+                    <span class="card-number">02</span>
+                    <h3>Hiking</h3>
+                    <p>
+                        Exploring nature trails gives me a chance to spend
+                        time outside and discover new places.
+                    </p>
+                </article>
+
+                <article class="interest-card">
+                    <span class="card-number">03</span>
+                    <h3>Coding</h3>
+                    <p>
+                        Building cool projects and learning how technology
+                        works is one of the things I enjoy about CS 210.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Sandra Halverson</p>
         </div>
-
-        <div class="interest-item">
-          <h3>Coding</h3>
-          <p>Building cool projects...</p>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>&copy; 2026 Your Name</p>
-  </footer>
-
+    </footer>
 </body>
 </html>

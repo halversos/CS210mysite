@@ -3,31 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobbies</title>
 
+    <title>My Hobbies - CS 210</title>
     <link rel="stylesheet" href="css/hobbies.css">
 </head>
 
 <body>
-    <h1>Hobbies</h1>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="site-title">My CS 210 Site</a>
 
-    <!-- Navigation menu -->
-    <nav>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="hobbies.html">My Hobbies</a></li>
-        <li><a href="../goals/goals.html">My Goals</a></li>
-    </nav>
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../hobbies/hobbies.html" aria-current="page">My Hobbies</a></li>
+                    <li><a href="../goals/goals.html">My Goals</a></li>
+                    <li><a href="../fishing/fishing.html">Fishing</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <p> My Five Hobbies include </p>
-    <ul>
-        <li>Fishing</li>
-        <li>Drawing</li>
-        <li>Reading</li>
-        <li>Cooking</li>
-        <li>Hiking</li>
-    </ul>
-    <p> I love spending time in nature! Its my favorite thing to do, especiallly because the weather is so nice right now.</p>
+    <main>
+        <section class="page-intro container">
+            <p class="eyebrow">WHAT I ENJOY</p>
+            <h1>My Hobbies</h1>
+            <p>
+                My hobbies give me a chance to relax, explore, and spend time
+                doing things that I enjoy.
+            </p>
+        </section>
 
-        <img src="img/hobbies.jpg"> 
+        <section class="content-section container">
+            <div class="hobby-grid">
+                <article class="hobby-card">
+                    <h2>Photography</h2>
+                    <p>
+                        Photography is one of my favorite ways to capture
+                        moments. I enjoy looking for interesting subjects and
+                        creating pictures that I can look back on later.
+                    </p>
+                </article>
+
+                <article class="hobby-card">
+                    <h2>Hiking</h2>
+                    <p>
+                        I enjoy hiking because it gives me an opportunity to
+                        get outside, explore nature, and experience new trails.
+                        It is also a great way to take a break from everyday
+                        activities.
+                    </p>
+                </article>
+
+                <article class="hobby-card">
+                    <h2>Coding</h2>
+                    <p>
+                        Coding has become an important interest for me through
+                        CS 210. I enjoy creating projects and seeing an idea
+                        turn into something that actually works.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Sandra Halverson</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -247,6 +247,23 @@ p {
     color: var(--muted);
 }
 
+/* Fishing page image */
+.fishing-image {
+    display: flex;
+    justify-content: center;
+    margin: var(--space-l) auto;
+    width: 25%;
+}
+
+.fishing-image img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
 /* ---------- Interior pages ---------- */
 
 .page-intro {
@@ -297,33 +314,42 @@ p {
     margin: 0;
 }
 
-/* =========================================
-   DESKTOP LAYOUT
-   ========================================= */
+.fishing-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-m);
+}
+
+.fishing-card {
+    padding: var(--space-m);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border-top: 5px solid var(--accent);
+}
+
+.fishing-card p {
+    color: var(--muted);
+}
+
+.fishing-highlight {
+    margin-bottom: var(--space-xl);
+    padding: var(--space-l);
+    background: var(--accent-light);
+    border-radius: var(--radius);
+}
+
+.fishing-highlight p:last-child {
+    max-width: 65ch;
+    margin-bottom: 0;
+    color: var(--text);
+}
+
+/* Desktop fishing layout */
 
 @media (min-width: 46rem) {
-
-    .hero {
-        grid-template-columns: minmax(0, 1.5fr) minmax(240px, 0.8fr);
-    }
-
-    .hero-image {
-        justify-self: end;
-    }
-
-    .interest-grid {
+    .fishing-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .hobby-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .goal-layout {
-        grid-template-columns: minmax(0, 1.6fr) minmax(250px, 0.8fr);
-    }
-
-    .header-content {
-        flex-wrap: nowrap;
     }
 }
